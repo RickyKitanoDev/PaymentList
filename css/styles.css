@@ -43,14 +43,15 @@ h3 {
 }
 
 
-/*.main {
+.main {
     background: #CCC;
     width: 700px;
     height: 100%;
-    position: absolute;
-}*/
+    margin-left: auto;
+    margin-right: auto;
+}
 
-.btn-contas {
+#cadastrar,.btn-contas {
     background: rgba(99, 97, 97, 0.747);
     padding: 10px;
     border-radius: 8px;
@@ -61,8 +62,39 @@ h3 {
     cursor: pointer;
 }
 
-.btn-contas:hover {
+#cadastrar:hover,.btn-contas:hover {
     background-color: #c8c8c8;
     transition: 0.5s;
     opacity: 0.7;
 }
+
+
+/***Estilo Formulario***/
+
+#form-cadastro-contas{
+    background: aquamarine;
+}
+
+label{
+    font-weight: bold;
+}
+
+#form-cadastro input{
+    width: 250px;
+    height: 40px;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.input-form{
+    position: relative;
+    top:35px;
+    left: 50px;
+}
+
+/**Estilo botão**/
+
