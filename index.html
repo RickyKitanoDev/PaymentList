@@ -9,6 +9,10 @@
     <title>Document</title>
     <!------ assim tu carrega o arquivo de css em uma pasta separada, sempre dentro do Header -->
     <link rel="stylesheet" href="css/styles.css">
+    <!---sempre que tu for carregar um arquivo, tu carrega ele aqui. se for estilo... excessão se for javascript
+    porem o jquery é uma lib, library biblioteca uma excessão, então ele tu carrega aqui, lembra do que eu falei ?
+/ para navegar entre os diretorios-->
+    <script src="js/libs/jquery.js"></script>
 </head>
 
 <body>
@@ -20,15 +24,17 @@
         <div id="form-cadastro-contas">
             <form id="form-cadastro">
                 <fieldset>
-                    <div class="input-form">
+                    <div class="input-formConta">
                         <label for="nome">Digite o nome da conta:</label>
+
                     </div>
-                        <input id="nome" type="text" value="" placeholder="Nome da conta" />
-                    
-                    <div class="input-form">
+                    <input id="nome" type="text" placeholder="Nome da conta" />
+
+                    <div class="input-formValor">
                         <label for="valor">Digite o Valor:</label>
+
                     </div>
-                        <input id="valor" type="text" value="" placeholder="Valor da conta" />  
+                    <input id="valor" type="number" placeholder="Valor da conta" />
                 </fieldset>
                 <fieldset>
                     <input id="cadastrar" type="button" value="Cadastrar Conta" />
@@ -37,13 +43,9 @@
         </div>
 
         <div class="contas">
-            <button class="btn-contas" onclick="PreencherGastos()">Começar a Prencher</button>
-            <h2 id="total-contas">O total de contas no mês foi de: R$ <br></h2>
+            <h2 id="total-contas">O total de contas deste mês foi de: R$</h2>
 
-            <h3 id="contas-mes">Os valores das despesas desse mês foram os seguintes: <br>Conta de Água: R$
-                <br>Conta de Energia: R$ <br>Cartão Santander: R$ <br>Nubank: R$ <br>Aluguel: R$ <br>Embracon: R$
-                <br>Rastreamento: R$ <br>Internet: R$ <br>Cartão Elieuda: R$
-                <br>Plano Celular: R$ <br> R$
+            <h3 id="contas-mes">
             </h3>
         </div>
 
