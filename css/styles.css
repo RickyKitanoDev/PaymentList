@@ -6,6 +6,7 @@
 
 body {
     background-color: rgba(0, 0, 0, 0.411);
+    width: 100%;
 }
 
 h2,
@@ -14,21 +15,27 @@ h3 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     margin-top: 40px;
-    color: rgb(146, 19, 19);
+    color: rgb(53, 5, 54);
 }
 
 h3 {
     line-height: 1.5;
 }
 
+div #titulo {
+    background: rgba(255, 255, 255, 0.925);
+}
+
+#titulo h1 {
+    color: white;
+}
+
 .titulo-pagina {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgba(55, 0, 255, 0.575);
-    width: 50%;
+    background-color: rgba(77, 58, 161, 0.973);
+    width: 100%;
     height: 50%;
-    margin-left: 25%;
     text-align: center;
-    border-radius: 5px;
     display: inline-block;
 }
 
@@ -43,8 +50,8 @@ h3 {
 }
 
 .main {
-    background: #CCC;
-    width: 700px;
+    background: #ccc;
+    width: 100%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -69,11 +76,22 @@ h3 {
     opacity: 0.7;
 }
 
+table {
+    border-collapse: collapse;
+    border: 2px solid gray;
+    width: 100%;
+    text-align: center;
+}
+
+table button {
+    background-color: red;
+}
+
 
 /***Estilo Formulario***/
 
 #form-cadastro-contas {
-    background: aquamarine;
+    background: rgb(122, 43, 226)
 }
 
 label {
@@ -89,20 +107,37 @@ label {
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
+    outline: 0;
+    border-radius: 5px;
 }
 
 .input-formConta {
     position: relative;
-    top: 35px;
-    left: 50px;
+    top: 5px;
+    left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: 20px;
 }
 
-.input-formValor {
+fieldset {
+    height: 60px;
+}
+
+#cadastrar {
+    background: rgba(184, 0, 184, 0.452);
+    color: white;
+}
+
+
+/*.input-formValor {
     position: relative;
-    top: 35px;
+    top: 5px;
     left: 50px;
     text-align: left;
-}
+}*/
 
 
 /**Estilo botão**/

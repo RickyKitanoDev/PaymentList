@@ -23,19 +23,19 @@
 
         <div id="form-cadastro-contas">
             <form id="form-cadastro">
-                <fieldset>
-                    <div class="input-formConta">
+                <div class="input-formConta">
+                    <div>
                         <label for="nome">Digite o nome da conta:</label>
-
+                        <input id="nome" type="text" placeholder="Nome da conta" />
                     </div>
-                    <input id="nome" type="text" placeholder="Nome da conta" />
-
-                    <div class="input-formValor">
+                    <div>
                         <label for="valor">Digite o Valor:</label>
-
+                        <input id="valor" type="number" placeholder="Valor da conta" />
                     </div>
-                    <input id="valor" type="number" placeholder="Valor da conta" />
-                </fieldset>
+
+                </div>
+
+
                 <fieldset>
                     <input id="cadastrar" type="button" value="Cadastrar Conta" />
                 </fieldset>
@@ -45,8 +45,17 @@
         <div class="contas">
             <h2 id="total-contas">O total de contas deste mês foi de: R$</h2>
 
-            <h3 id="contas-mes">
-            </h3>
+            <table border="1">
+                <thead class="topo-tabela">
+                    <th>ID</th>
+                    <th>Conta</th>
+                    <th>Valor</th>
+                    <th>Ação</th>
+                </thead>
+
+                <tbody id="contas-mes">
+                </tbody>
+            </table>
         </div>
 
 
